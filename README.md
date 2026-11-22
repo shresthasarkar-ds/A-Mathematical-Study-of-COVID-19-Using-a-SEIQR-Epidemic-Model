@@ -122,8 +122,6 @@ All 26 charts are in the `charts/` folder.
 *Euler's error shrinks in proportion to the step size (first order); RK4's error shrinks about 16 times when the step is halved (fourth order).*
 
 ## Repository structure
-
-```
 .
 ├── README.md
 ├── report/
@@ -134,12 +132,17 @@ All 26 charts are in the `charts/` folder.
 ├── code/
 │   ├── python/
 │   │   └── seiqr_charts.py
-│   └── cpp/
-│       ├── seiqr.cpp          (Euler's method)
-│       └── seiqr_rk4.cpp      (Runge–Kutta 4)
+│   ├── cpp/
+│   │   ├── seiqr.cpp          (Euler's method)
+│   │   └── seiqr_rk4.cpp      (Runge–Kutta 4)
+│   └── scilab/
+│       ├── seiqr_charts.sce
+│       ├── seiqr_charts_Case2.sce
+│       ├── seiqr_phase_plane.sce
+│       ├── seiqr_lockdown.sce
+│       └── seiqr_euler_vs_rk4.sce
 └── charts/
     └── Fig01 … Fig26 (PNG)
-```
 
 ### Excel workbooks
 
@@ -177,6 +180,8 @@ g++ -O2 -o seiqr_rk4 code/cpp/seiqr_rk4.cpp && ./seiqr_rk4
 ```
 
 Both programs print R₀ and the peak of I. For Case 1 the RK4 program gives a peak of 697.875 on day 63.5.
+
+**Scilab** (free, similar to MATLAB): open a .sce file from code/scilab/ in Scilab (File → Open) and click Run. The scripts draw the compartment charts for both cases, the phase plane, the lockdown scenarios and the Euler-against-RK4 comparison.
 
 ## Data source
 
