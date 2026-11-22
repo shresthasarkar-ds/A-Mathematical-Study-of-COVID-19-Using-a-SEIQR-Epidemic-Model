@@ -122,27 +122,6 @@ All 26 charts are in the `charts/` folder.
 *Euler's error shrinks in proportion to the step size (first order); RK4's error shrinks about 16 times when the step is halved (fourth order).*
 
 ## Repository structure
-.
-├── README.md
-├── report/
-│   └── COVID19_SEIQR_Project_Corrected.docx
-├── excel/
-│   ├── SEIQR_COVID19_Simulation.xlsx
-│   └── SEIQR_COVID19_India_Fit.xlsx
-├── code/
-│   ├── python/
-│   │   └── seiqr_charts.py
-│   ├── cpp/
-│   │   ├── seiqr.cpp          (Euler's method)
-│   │   └── seiqr_rk4.cpp      (Runge–Kutta 4)
-│   └── scilab/
-│       ├── seiqr_charts.sce
-│       ├── seiqr_charts_Case2.sce
-│       ├── seiqr_phase_plane.sce
-│       ├── seiqr_lockdown.sce
-│       └── seiqr_euler_vs_rk4.sce
-└── charts/
-    └── Fig01 … Fig26 (PNG)
 
 ### Excel workbooks
 
